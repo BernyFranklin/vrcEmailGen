@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRC Email Generator</title>
-</head>
-<body>
-    <main>
-        <h1>VRC Email Generator</h1>
-        <p>
-            Fill in the required fields and select the options to include in the email.
-            <br>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>VRC Email Generator</title>
+   </head>
+   <body>
+      <main>
+         <h1>VRC Email Generator</h1>
+         <p>
+            Fill in the required fields and select the options to include in the
+            email.
+            <br />
             Once completed, hit "Generate Email".
-        </p>
-        <form id="emailForm">
+         </p>
+         <form id="emailForm">
             <!--firstName-->
             <label for="firstName">Student First Name</label>
-            <br>
+            <br />
             <input type="text" id="firstName" name="firstName" required />
-            <br>
-            <br>
+            <br />
+            <br />
             <!--studentID-->
             <label for="studentID"> Student ID Number</label>
-            <br>
+            <br />
             <input type="text" id="studentID" name="studentID" required />
-            <br>
-            <br>
+            <br />
+            <br />
             <!--Benefit Options-->
             <fieldset>
-                <legend>Benefit Options</legend>
-                <label>
-                    <input type="checkbox" name="option" value="option1" />
-                    CalVet Fee Waiver
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option2" />
-                    Chapter 30: Montgomery G.I. Bill
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option3" />
-                    Chapter 31: Vocational Rehabilitation and Education (VR&E)
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option4" />
-                    Chapter 33 (S/D): Post-9/11 G.I. Bill
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option5" />
-                    Chapter 35: Dependent Education Assistance
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option6" />
-                    Chapter 1606: Montgomery G.I. Bill Selected Reserve
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option7" />
-                    Military Tuition Assistance
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="option" value="option8" />
-                    Veteran with No Benefits
-                </label>
+               <legend>Benefit Options</legend>
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option1"
+                     id="option1"
+                  />
+                  CalVet Fee Waiver
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option2"
+                     id="option2"
+                  />
+                  Chapter 30: Montgomery G.I. Bill
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option3"
+                     id="option3"
+                  />
+                  Chapter 31: Vocational Rehabilitation and Education (VR&E)
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option4"
+                     id="option4"
+                  />
+                  Chapter 33 (S/D): Post-9/11 G.I. Bill
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option5"
+                     id="option5"
+                  />
+                  Chapter 35: Dependent Education Assistance
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option6"
+                     id="option6"
+                  />
+                  Chapter 1606: Montgomery G.I. Bill Selected Reserve
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option7"
+                     id="option7"
+                  />
+                  Military Tuition Assistance
+               </label>
+               <br />
+               <label>
+                  <input
+                     type="checkbox"
+                     name="option"
+                     value="option8"
+                     id="option8"
+                  />
+                  Veteran with No Benefits
+               </label>
             </fieldset>
             <!--Submit Button-->
-            <br>
+            <br />
             <button type="submit">Generate Email</button>
-        </form>
-    </main>
-</body>
+         </form>
+      </main>
+      <script src="emailGenerator.js" />
+   </body>
 </html>
