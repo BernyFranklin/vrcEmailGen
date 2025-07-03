@@ -41,6 +41,12 @@ document
       const conclusion =
          "\n\nIf you have any further questions, feel free to email us directly or stop by our office at University Center Suite 101.\n\nBest Regards,";
 
+      // Build the email
       const email = `${introduction}${body}${conclusion}`;
+      // Encode the email
+      const encodedEmail = encodeURIComponent(email);
+      // Redirect to preview page
+      window.location.href = `emailPreview.html?email=${encodedEmail}`;
+
       console.log(email);
    });
