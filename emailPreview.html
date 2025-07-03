@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Preview</title>
-</head>
-<body>
-    <main>
-        <h1>Generated Email</h1>
-        <div id="emailOutput"></div>
-        <div>
-            <button id=""copyBtn">Copy to Clipboard</button>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Email Preview</title>
+   </head>
+   <body>
+      <main>
+         <h1>Generated Email</h1>
+         <div
+            id="emailOutput"
+            style="white-space: normal; overflow-wrap: break-word"
+         ></div>
+         <div>
+            <button id="copyBtn">Copy to Clipboard</button>
             <a href="index.html">
-                <button type="button">Start a New Form</button>
+               <button type="button">Start a New Form</button>
             </a>
-        </div>
-    </main>
-    <script src="previewRenderer.js" />
-</body>
+         </div>
+      </main>
+      <script src="previewRenderer.js" />
+   </body>
 </html>
