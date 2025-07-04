@@ -2,6 +2,14 @@ document
    .getElementById("emailForm")
    .addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent form from performing normal submit
+      const anyChecked = Array.from(
+         document.querySelectorAll('input[type="checkbox"][name="option"]')
+      ).some((checkbox) => checkbox.checked);
+
+      if (!anyChecked) {
+         alert("Please select at least one benefit option.");
+         return;
+      }
 
       // Variables to use for content of the email
       const firstName = document.getElementById("firstName").value.trim();

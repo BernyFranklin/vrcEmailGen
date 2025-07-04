@@ -27,13 +27,28 @@
             <!--firstName-->
             <label for="firstName">Student First Name</label>
             <br />
-            <input type="text" id="firstName" name="firstName" required />
+            <input
+               type="text"
+               id="firstName"
+               name="firstName"
+               pattern="[A-Za-z]+"
+               minlength="2"
+               required
+            />
             <br />
             <br />
             <!--studentID-->
             <label for="studentID"> Student ID Number</label>
             <br />
-            <input type="text" id="studentID" name="studentID" required />
+            <input
+               type="text"
+               id="studentID"
+               name="studentID"
+               pattern="[0-9]+"
+               minlength="9"
+               maxlength="9"
+               required
+            />
             <br />
             <br />
             <!--Benefit Options-->
