@@ -1,0 +1,32 @@
+body {
+   background-color: #002a6d;
+}
+
+.main-container {
+   max-width: 800px;
+   margin: 50px auto;
+   padding: 2rem;
+   background-color: white;
+   border-radius: 1rem;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+   background-color: #c70f27;
+   border-color: #c70f27;
+}
+
+.btn-primary:hover {
+   background-color: #a00c1f;
+   border-color: #a00c1f;
+}
+
+.btn-danger {
+   background-color: #c70f27;
+   border-color: #c70f27;
+}
+
+.btn-danger:hover {
+   background-color: #a00c1f;
+   border-color: #a00c1f;
+}
